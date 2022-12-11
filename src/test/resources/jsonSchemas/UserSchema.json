@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome10",
+  "definitions": {
+    "Welcome10": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "$id": {
+          "type": "string",
+          "format": "integer"
+        },
+        "page": {
+          "type": "integer"
+        },
+        "per_page": {
+          "type": "integer"
+        },
+        "totalrecord": {
+          "type": "integer"
+        },
+        "total_pages": {
+          "type": "integer"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Datum"
+          }
+        }
+      },
+      "required": [
+        "$id",
+        "data",
+        "page",
+        "per_page",
+        "total_pages",
+        "totalrecord"
+      ],
+      "title": "Welcome10"
+    },
+    "Datum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "$id": {
+          "type": "string",
+          "format": "integer"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "profilepicture": {
+          "type": "string",
+          "format": "uri",
+          "qt-uri-protocols": [
+            "http"
+          ],
+          "qt-uri-extensions": [
+            ".png"
+          ]
+        },
+        "location": {
+          "$ref": "#/definitions/Location"
+        },
+        "createdat": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "$id",
+        "createdat",
+        "email",
+        "id",
+        "location",
+        "name",
+        "profilepicture"
+      ],
+      "title": "Datum"
+    },
+    "Location": {
+      "type": "string",
+      "enum": [
+        "USA",
+        "Noida, Uttar Pradesh, India"
+      ],
+      "title": "Location"
+    }
+  }
+}

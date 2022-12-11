@@ -1,0 +1,13 @@
+package com.bravo.johny.jsonserver.runner;
+
+import org.junit.runner.RunWith;
+
+/*
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features="src/test/resources/features",
+        glue = {"com.bravo.johny.jsonserver.stepDefinitions"},
+        plugin = { "pretty", "io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm"})
+public class TestRunner {
+
+}*/
