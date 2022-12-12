@@ -13,4 +13,8 @@ node {
 
         app = docker.build("johnybravo/rest_api_automation")
     }
+
+    stage('Create containter') {
+        app.run()
+    }
 }
