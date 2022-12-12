@@ -4,4 +4,4 @@ COPY build.gradle home/ApiAutomation/build.gradle
 COPY gradlew home/ApiAutomation/gradlew
 COPY settings.gradle home/ApiAutomation/settings.gradle
 WORKDIR home/ApiAutomation
-ENTRYPOINT /home/ApiAutomation/gradlew clean test
+ENTRYPOINT gradle clean test
