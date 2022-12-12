@@ -6,4 +6,5 @@ COPY gradle home/ApiAutomation/gradle
 COPY settings.gradle home/ApiAutomation/settings.gradle
 WORKDIR home/ApiAutomation
 #ENTRYPOINT /home/gradle/home/ApiAutomation/gradlew clean test
-CMD tail -f /dev/null
+ENTRYPOINT gradle clean test
+#CMD tail -f /dev/null
