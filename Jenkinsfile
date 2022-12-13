@@ -15,7 +15,6 @@ node {
     }
 
     stage('Create containter') {
-        //app.run('-v /tmp:/tmp')
-        app.run()
+        app.run('-v random_volume_name:/home/gradle/home')
     }
 }
