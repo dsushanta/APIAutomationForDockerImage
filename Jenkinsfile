@@ -18,7 +18,11 @@ node {
         app.run('-v random_volume_name:/home/gradle/home')
     }
 
-    stage('echo') {
+    stage('copying builds') {
         sh 'cp -rf /var/lib/docker/volumes/random_volume_name/_data/ApiAutomation/build ${WORKSPACE}'
+    }
+
+    stage('allure-report') {
+        allure includeProperties: false, jdk: '', report: 'build/allure-report', results: [[path: 'build/allure-results']]
     }
 }
