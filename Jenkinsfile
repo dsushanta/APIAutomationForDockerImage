@@ -17,4 +17,8 @@ node {
     stage('Create containter') {
         app.run('-v random_volume_name:/home/gradle/home')
     }
+
+    stage('echo') {
+        sh 'echo ${WORKSPACE}'
+    }
 }
