@@ -19,6 +19,6 @@ node {
     }
 
     stage('echo') {
-        sh 'echo ${WORKSPACE}'
+        sh 'cp -rf /var/lib/docker/volumes/random_volume_name/_data/ApiAutomation/build ${WORKSPACE}'
     }
 }
