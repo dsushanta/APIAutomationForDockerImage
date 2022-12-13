@@ -15,6 +15,7 @@ node {
     }
 
     stage('Create containter') {
-        app.run('-v /tmp:/tmp')
+        //app.run('-v /tmp:/tmp')
+        app.run()
     }
 }
