@@ -50,7 +50,7 @@ pipeline {
         stage('Copy builds') {
             steps {
                 def loc
-                loc = sh 'sudo docker volume inspect --format '{{ .Mountpoint }}' jenkins_volume '
+                loc = sh 'sudo docker volume inspect --format "{{ .Mountpoint }}" jenkins_volume '
                 sh 'cp -rf ${loc}/ApiAutomation/build ${WORKSPACE}'
             }
         }
