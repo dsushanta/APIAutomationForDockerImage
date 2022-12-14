@@ -13,14 +13,15 @@ node {
     stage('copying builds') {
         //def loc
         //String loc = sh 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name'
-        String loc = sh (
+        String LOC = sh (
                          script: 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name',
                          returnStdout: true
                      ).trim()
         //String loc = sh 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name | sed "s/$/\/ApiAutomation\/build/" | xargs cp -rft ${WORKSPACE}'
         println(WORKSPACE)
-        println(loc+"/ApiAutomation/build")
-        sh 'echo ${loc}'
+        LOC = LOC + "/ApiAutomation/build"
+        println(LOC)
+        sh 'echo ${LOC}'
         sh 'echo ${WORKSPACE}'
         //sh 'echo ${loc}'
         //sh 'cp -rf ${loc}/ApiAutomation/build ${WORKSPACE}'
