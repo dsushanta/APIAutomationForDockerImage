@@ -12,7 +12,7 @@ node {
     }
     stage('copying builds') {
         def loc
-        loc = sh 'docker volume inspect --format "{{ .Mountpoint }}" jenkins_volume'
+        loc = sh 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name'
         sh 'echo ${loc}'
         //sh 'cp -rf ${loc}/ApiAutomation/build ${WORKSPACE}'
         //sh 'cp -rf /var/lib/docker/volumes/random_volume_name/_data/ApiAutomation/build ${WORKSPACE}'
