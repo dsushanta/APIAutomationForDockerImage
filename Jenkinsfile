@@ -19,7 +19,7 @@ node {
                      ).trim()
         //String loc = sh 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name | sed "s/$/\/ApiAutomation\/build/" | xargs cp -rft ${WORKSPACE}'
         println(WORKSPACE)
-        println(loc)
+        println(loc+"/ApiAutomation/build")
         sh 'echo ${loc}'
         sh 'echo ${WORKSPACE}'
         //sh 'echo ${loc}'
