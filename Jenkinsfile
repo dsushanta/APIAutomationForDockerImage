@@ -14,7 +14,10 @@ node {
         //def loc
         String loc = sh 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name'
         //String loc = sh 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name | sed "s/$/\/ApiAutomation\/build/" | xargs cp -rft ${WORKSPACE}'
+        println(WORKSPACE)
         println(loc)
+        sh 'echo ${loc}'
+        sh 'echo ${WORKSPACE}'
         //sh 'echo ${loc}'
         //sh 'cp -rf ${loc}/ApiAutomation/build ${WORKSPACE}'
         //sh 'cp -rf /var/lib/docker/volumes/random_volume_name/_data/ApiAutomation/build ${WORKSPACE}'
