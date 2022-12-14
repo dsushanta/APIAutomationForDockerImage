@@ -18,13 +18,13 @@ node {
                          returnStdout: true
                      ).trim()
         //String loc = sh 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name | sed "s/$/\/ApiAutomation\/build/" | xargs cp -rft ${WORKSPACE}'
-        println(WORKSPACE)
+        //println(WORKSPACE)
         LOC = LOC + "/ApiAutomation/build"
-        println(LOC)
-        sh "echo ${LOC}"
-        sh 'echo ${WORKSPACE}'
+        //println(LOC)
+        //sh "echo ${LOC}"
+        //sh 'echo ${WORKSPACE}'
         //sh 'echo ${loc}'
-        //sh 'cp -rf ${loc}/ApiAutomation/build ${WORKSPACE}'
+        sh "cp -rf ${LOC} ${WORKSPACE}"
         //sh 'cp -rf /var/lib/docker/volumes/random_volume_name/_data/ApiAutomation/build ${WORKSPACE}'
     }
     stage('allure-report') {
