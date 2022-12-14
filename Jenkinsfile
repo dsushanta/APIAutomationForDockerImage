@@ -13,11 +13,11 @@ node {
     stage('copying builds') {
         def loc
         loc = sh 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name'
-        sh 'echo ${loc}'
-        //sh 'cp -rf ${loc}/ApiAutomation/build ${WORKSPACE}'
+        //sh 'echo ${loc}'
+        sh 'cp -rf ${loc}/ApiAutomation/build ${WORKSPACE}'
         //sh 'cp -rf /var/lib/docker/volumes/random_volume_name/_data/ApiAutomation/build ${WORKSPACE}'
     }
     stage('allure-report') {
-        //allure includeProperties: false, jdk: '', report: 'build/allure-report', results: [[path: 'build/allure-results']]
+        allure includeProperties: false, jdk: '', report: 'build/allure-report', results: [[path: 'build/allure-results']]
     }
 }
