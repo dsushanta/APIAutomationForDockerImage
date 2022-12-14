@@ -13,7 +13,7 @@ node {
     stage('copying builds') {
         //def loc
         //String loc = sh 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name'
-        String LOC = sh (
+        def LOC = sh (
                          script: 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name',
                          returnStdout: true
                      ).trim()
