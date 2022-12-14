@@ -10,24 +10,12 @@ node {
     stage('Create container') {
         app.run('-v random_volume_name:/home/gradle/home')
     }
-    stage('copying builds') {
-        //def loc
-        //String loc = sh 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name'
-        def LOC = sh (
-                         script: 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name',
-                         returnStdout: true
-                     ).trim()
-        //String loc = sh 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name | sed "s/$/\/ApiAutomation\/build/" | xargs cp -rft ${WORKSPACE}'
-        //println(WORKSPACE)
-        LOC = LOC + "/ApiAutomation/build"
-        //println(LOC)
-        //sh "echo ${LOC}"
-        //sh 'echo ${WORKSPACE}'
-        //sh 'echo ${loc}'
-        sh "cp -rf ${LOC} ${WORKSPACE}"
-        //sh 'cp -rf /var/lib/docker/volumes/random_volume_name/_data/ApiAutomation/build ${WORKSPACE}'
+    stage('Copy build') {
+        def build_location = sh (script: 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name',returnStdout: true).trim()
+        build_location = build_location + "/ApiAutomation/build"
+        sh "cp -rf ${build_location} ${WORKSPACE}"
     }
-    stage('allure-report') {
+    stage('Generate allure report') {
         allure includeProperties: false, jdk: '', report: 'build/allure-report', results: [[path: 'build/allure-results']]
     }
 }
