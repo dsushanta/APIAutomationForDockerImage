@@ -21,7 +21,7 @@ node {
         println(WORKSPACE)
         LOC = LOC + "/ApiAutomation/build"
         println(LOC)
-        sh 'echo ${LOC}'
+        sh "echo $LOC"
         sh 'echo ${WORKSPACE}'
         //sh 'echo ${loc}'
         //sh 'cp -rf ${loc}/ApiAutomation/build ${WORKSPACE}'
