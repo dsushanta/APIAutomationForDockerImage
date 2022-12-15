@@ -1,4 +1,4 @@
-FROM gradle:7.6.0-jdk17-alpine
+FROM johnybravo/rest_api_automation_framework:latest
 COPY src home/ApiAutomation/src
 COPY build.gradle home/ApiAutomation/build.gradle
 COPY gradlew home/ApiAutomation/gradlew
