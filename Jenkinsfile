@@ -22,5 +22,7 @@ node {
     stage('Generate allure report') {
         allure includeProperties: false, jdk: '', report: 'build/allure-report', results: [[path: 'build/allure-results']]
     }
-    stage('Remove allure results')
+    stage('Remove allure results') {
+
+    }
 }
