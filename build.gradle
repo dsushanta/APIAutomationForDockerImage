@@ -11,24 +11,47 @@ repositories {
 }
 
 dependencies {
-    testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+    //testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
     testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '4.4.0'
     implementation group: 'io.rest-assured', name: 'json-path', version: '4.4.0'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0'
     implementation 'org.projectlombok:lombok:1.18.24'
-    //testImplementation 'io.cucumber:cucumber-java:7.8.1'
-    //testImplementation 'io.cucumber:cucumber-junit:7.8.1'
-    testImplementation group: 'io.cucumber', name: 'cucumber-picocontainer', version: '6.10.0'
+    testImplementation 'io.cucumber:cucumber-java:7.8.1'
+    //testImplementation 'io.cucumber:cucumber-java:7.10.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.8.1'
+    //testImplementation group: 'io.cucumber', name: 'cucumber-picocontainer', version: '6.10.0'
+    testImplementation 'io.cucumber:cucumber-picocontainer:7.8.1'
     implementation 'com.googlecode.json-simple:json-simple:1.1.1'
     implementation group: 'io.rest-assured', name: 'json-schema-validator', version: '4.4.0'
     implementation 'org.hamcrest:hamcrest-core:2.2'
     implementation 'com.fasterxml.jackson.module:jackson-module-jsonSchema:2.14.0'
-    //implementation 'io.qameta.allure:allure-cucumber6-jvm:2.20.0'
-    implementation 'io.qameta.allure:allure-testng:2.20.1'
+    implementation 'io.qameta.allure:allure-cucumber7-jvm:2.20.1'
+    //implementation 'io.qameta.allure:allure-testng:2.20.1'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
 }
 
 test {
     useTestNG()
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+task cucumberCli() {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'pretty',
+                    '--plugin', 'io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm',
+                    '--glue', 'com.bravo.johny.jsonserver.stepDefinitions',
+                    'src/test/resources/features']
+        }
+    }
 }

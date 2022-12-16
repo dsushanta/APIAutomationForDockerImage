@@ -4,7 +4,7 @@ import com.bravo.johny.jsonserver.core.ScenarioContext;
 import com.bravo.johny.jsonserver.services.CommentService;
 import com.bravo.johny.jsonserver.services.PostService;
 
-/*public class BaseSteps implements ISteps{
+public class BaseSteps implements ISteps{
     protected PostService postService;
     protected CommentService commentService;
     protected ScenarioContext scenarioContext;
@@ -12,4 +12,4 @@ import com.bravo.johny.jsonserver.services.PostService;
     public BaseSteps(ScenarioContext scenarioContext) {
         this.scenarioContext = scenarioContext;
     }
-}*/
+}

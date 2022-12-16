@@ -20,7 +20,7 @@ X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
 Content-Length: 83
 ETag: W/"53-6uGdm5Dd8ZV5MbcjqbbT/M2yR04"
-Date: Mon, 12 Dec 2022 19:46:50 GMT
+Date: Fri, 16 Dec 2022 08:42:34 GMT
 Connection: keep-alive
 
 [
@@ -61,15 +61,91 @@ Pragma: no-cache
 Expires: -1
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-Content-Length: 72
-ETag: W/"48-dbwKnExJMpAwr+pAJfN+4XGXGSA"
-Date: Mon, 12 Dec 2022 19:46:52 GMT
+ETag: W/"416-4faXb1gZtA4E7gb7pkDDrf1Z9oA"
+Content-Encoding: gzip
+Date: Fri, 16 Dec 2022 08:42:34 GMT
 Connection: keep-alive
+Transfer-Encoding: chunked
 
 [
     {
         "id": 1,
         "body": "How you doing !!",
+        "postId": 1
+    },
+    {
+        "id": 2,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 3,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 4,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 5,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 6,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 7,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 8,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 9,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 10,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 11,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 12,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 13,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 14,
+        "body": "Hello mate",
+        "postId": 1
+    },
+    {
+        "id": 15,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 16,
+        "body": "Hello mate",
         "postId": 1
     }
 ]
@@ -82,15 +158,91 @@ Pragma: no-cache
 Expires: -1
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-Content-Length: 72
-ETag: W/"48-dbwKnExJMpAwr+pAJfN+4XGXGSA"
-Date: Mon, 12 Dec 2022 19:46:52 GMT
+ETag: W/"416-4faXb1gZtA4E7gb7pkDDrf1Z9oA"
+Content-Encoding: gzip
+Date: Fri, 16 Dec 2022 08:42:34 GMT
 Connection: keep-alive
+Transfer-Encoding: chunked
 
 [
     {
         "id": 1,
         "body": "How you doing !!",
+        "postId": 1
+    },
+    {
+        "id": 2,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 3,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 4,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 5,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 6,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 7,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 8,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 9,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 10,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 11,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 12,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 13,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 14,
+        "body": "Hello mate",
+        "postId": 1
+    },
+    {
+        "id": 15,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 16,
+        "body": "Hello mate",
         "postId": 1
     }
 ]
@@ -107,8 +259,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 2,
-    "body": "Hello World",
+    "id": 17,
+    "body": "Hi There",
     "postId": 1
 }
 Request method:	POST
@@ -124,8 +276,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 2,
-    "body": "Hello World",
+    "id": 17,
+    "body": "Hi There",
     "postId": 1
 }
 Request method:	POST
@@ -141,8 +293,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 2,
-    "body": "Hello World",
+    "id": 17,
+    "body": "Hi There",
     "postId": 1
 }
 HTTP/1.1 201 Created
@@ -153,17 +305,17 @@ Cache-Control: no-cache
 Pragma: no-cache
 Expires: -1
 Access-Control-Expose-Headers: Location
-Location: http://192.168.0.47/comments/2
+Location: http://192.168.0.47/comments/17
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-Content-Length: 53
-ETag: W/"35-WzFMMwDizmUXeDv5Pb1EweXUAX4"
-Date: Mon, 12 Dec 2022 19:46:52 GMT
+Content-Length: 51
+ETag: W/"33-oKUJbw4TcKrJF3ahkFCiLyZ6MI8"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
 Connection: keep-alive
 
 {
-    "id": 2,
-    "body": "Hello World",
+    "id": 17,
+    "body": "Hi There",
     "postId": 1
 }
 HTTP/1.1 201 Created
@@ -174,17 +326,17 @@ Cache-Control: no-cache
 Pragma: no-cache
 Expires: -1
 Access-Control-Expose-Headers: Location
-Location: http://192.168.0.47/comments/2
+Location: http://192.168.0.47/comments/17
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-Content-Length: 53
-ETag: W/"35-WzFMMwDizmUXeDv5Pb1EweXUAX4"
-Date: Mon, 12 Dec 2022 19:46:52 GMT
+Content-Length: 51
+ETag: W/"33-oKUJbw4TcKrJF3ahkFCiLyZ6MI8"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
 Connection: keep-alive
 
 {
-    "id": 2,
-    "body": "Hello World",
+    "id": 17,
+    "body": "Hi There",
     "postId": 1
 }
 HTTP/1.1 201 Created
@@ -195,188 +347,991 @@ Cache-Control: no-cache
 Pragma: no-cache
 Expires: -1
 Access-Control-Expose-Headers: Location
-Location: http://192.168.0.47/comments/2
+Location: http://192.168.0.47/comments/17
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+Content-Length: 51
+ETag: W/"33-oKUJbw4TcKrJF3ahkFCiLyZ6MI8"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
+Connection: keep-alive
+
+{
+    "id": 17,
+    "body": "Hi There",
+    "postId": 1
+}
+Request method:	GET
+Request URI:	http://192.168.0.47/posts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 17,
+    "body": "Hi There",
+    "postId": 1
+}
+Request method:	GET
+Request URI:	http://192.168.0.47/posts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 17,
+    "body": "Hi There",
+    "postId": 1
+}
+Request method:	GET
+Request URI:	http://192.168.0.47/posts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 17,
+    "body": "Hi There",
+    "postId": 1
+}
+Request method:	GET
+Request URI:	http://192.168.0.47/posts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 17,
+    "body": "Hi There",
+    "postId": 1
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+Content-Length: 83
+ETag: W/"53-6uGdm5Dd8ZV5MbcjqbbT/M2yR04"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
+Connection: keep-alive
+
+[
+    {
+        "id": 1,
+        "title": "The Days of our lives",
+        "author": "Joey"
+    }
+]
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+Content-Length: 83
+ETag: W/"53-6uGdm5Dd8ZV5MbcjqbbT/M2yR04"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
+Connection: keep-alive
+
+[
+    {
+        "id": 1,
+        "title": "The Days of our lives",
+        "author": "Joey"
+    }
+]
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+Content-Length: 83
+ETag: W/"53-6uGdm5Dd8ZV5MbcjqbbT/M2yR04"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
+Connection: keep-alive
+
+[
+    {
+        "id": 1,
+        "title": "The Days of our lives",
+        "author": "Joey"
+    }
+]
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+Content-Length: 83
+ETag: W/"53-6uGdm5Dd8ZV5MbcjqbbT/M2yR04"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
+Connection: keep-alive
+
+[
+    {
+        "id": 1,
+        "title": "The Days of our lives",
+        "author": "Joey"
+    }
+]
+Request method:	GET
+Request URI:	http://192.168.0.47/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 17,
+    "body": "Hi There",
+    "postId": 1
+}
+Request method:	GET
+Request URI:	http://192.168.0.47/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 17,
+    "body": "Hi There",
+    "postId": 1
+}
+Request method:	GET
+Request URI:	http://192.168.0.47/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 17,
+    "body": "Hi There",
+    "postId": 1
+}
+Request method:	GET
+Request URI:	http://192.168.0.47/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 17,
+    "body": "Hi There",
+    "postId": 1
+}
+Request method:	GET
+Request URI:	http://192.168.0.47/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 17,
+    "body": "Hi There",
+    "postId": 1
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+ETag: W/"455-pF1YjruYRz3RR/d2gUliL8tQXXk"
+Content-Encoding: gzip
+Date: Fri, 16 Dec 2022 08:42:35 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "body": "How you doing !!",
+        "postId": 1
+    },
+    {
+        "id": 2,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 3,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 4,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 5,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 6,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 7,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 8,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 9,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 10,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 11,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 12,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 13,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 14,
+        "body": "Hello mate",
+        "postId": 1
+    },
+    {
+        "id": 15,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 16,
+        "body": "Hello mate",
+        "postId": 1
+    },
+    {
+        "id": 17,
+        "body": "Hi There",
+        "postId": 1
+    }
+]
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+ETag: W/"455-pF1YjruYRz3RR/d2gUliL8tQXXk"
+Content-Encoding: gzip
+Date: Fri, 16 Dec 2022 08:42:35 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "body": "How you doing !!",
+        "postId": 1
+    },
+    {
+        "id": 2,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 3,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 4,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 5,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 6,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 7,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 8,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 9,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 10,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 11,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 12,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 13,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 14,
+        "body": "Hello mate",
+        "postId": 1
+    },
+    {
+        "id": 15,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 16,
+        "body": "Hello mate",
+        "postId": 1
+    },
+    {
+        "id": 17,
+        "body": "Hi There",
+        "postId": 1
+    }
+]
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+ETag: W/"455-pF1YjruYRz3RR/d2gUliL8tQXXk"
+Content-Encoding: gzip
+Date: Fri, 16 Dec 2022 08:42:35 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "body": "How you doing !!",
+        "postId": 1
+    },
+    {
+        "id": 2,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 3,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 4,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 5,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 6,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 7,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 8,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 9,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 10,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 11,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 12,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 13,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 14,
+        "body": "Hello mate",
+        "postId": 1
+    },
+    {
+        "id": 15,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 16,
+        "body": "Hello mate",
+        "postId": 1
+    },
+    {
+        "id": 17,
+        "body": "Hi There",
+        "postId": 1
+    }
+]
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+ETag: W/"455-pF1YjruYRz3RR/d2gUliL8tQXXk"
+Content-Encoding: gzip
+Date: Fri, 16 Dec 2022 08:42:35 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "body": "How you doing !!",
+        "postId": 1
+    },
+    {
+        "id": 2,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 3,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 4,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 5,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 6,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 7,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 8,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 9,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 10,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 11,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 12,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 13,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 14,
+        "body": "Hello mate",
+        "postId": 1
+    },
+    {
+        "id": 15,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 16,
+        "body": "Hello mate",
+        "postId": 1
+    },
+    {
+        "id": 17,
+        "body": "Hi There",
+        "postId": 1
+    }
+]
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+ETag: W/"455-pF1YjruYRz3RR/d2gUliL8tQXXk"
+Content-Encoding: gzip
+Date: Fri, 16 Dec 2022 08:42:35 GMT
+Connection: keep-alive
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "body": "How you doing !!",
+        "postId": 1
+    },
+    {
+        "id": 2,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 3,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 4,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 5,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 6,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 7,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 8,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 9,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 10,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 11,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 12,
+        "body": "Hello World",
+        "postId": 1
+    },
+    {
+        "id": 13,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 14,
+        "body": "Hello mate",
+        "postId": 1
+    },
+    {
+        "id": 15,
+        "body": "Hi There",
+        "postId": 1
+    },
+    {
+        "id": 16,
+        "body": "Hello mate",
+        "postId": 1
+    },
+    {
+        "id": 17,
+        "body": "Hi There",
+        "postId": 1
+    }
+]
+Request method:	POST
+Request URI:	http://192.168.0.47/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 18,
+    "body": "Hello mate",
+    "postId": 1
+}
+Request method:	POST
+Request URI:	http://192.168.0.47/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 18,
+    "body": "Hello mate",
+    "postId": 1
+}
+Request method:	POST
+Request URI:	http://192.168.0.47/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 18,
+    "body": "Hello mate",
+    "postId": 1
+}
+Request method:	POST
+Request URI:	http://192.168.0.47/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 18,
+    "body": "Hello mate",
+    "postId": 1
+}
+Request method:	POST
+Request URI:	http://192.168.0.47/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 18,
+    "body": "Hello mate",
+    "postId": 1
+}
+Request method:	POST
+Request URI:	http://192.168.0.47/comments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 18,
+    "body": "Hello mate",
+    "postId": 1
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://192.168.0.47/comments/18
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
 Content-Length: 53
-ETag: W/"35-WzFMMwDizmUXeDv5Pb1EweXUAX4"
-Date: Mon, 12 Dec 2022 19:46:52 GMT
+ETag: W/"35-FQGnh8LB9LDhM0mJxDcMZovnjXA"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
 Connection: keep-alive
 
 {
-    "id": 2,
-    "body": "Hello World",
+    "id": 18,
+    "body": "Hello mate",
     "postId": 1
 }
-Request method:	GET
-Request URI:	http://192.168.0.47/comments
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": 2,
-    "body": "Hello World",
-    "postId": 1
-}
-Request method:	GET
-Request URI:	http://192.168.0.47/comments
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": 2,
-    "body": "Hello World",
-    "postId": 1
-}
-Request method:	GET
-Request URI:	http://192.168.0.47/comments
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": 2,
-    "body": "Hello World",
-    "postId": 1
-}
-Request method:	GET
-Request URI:	http://192.168.0.47/comments
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": 2,
-    "body": "Hello World",
-    "postId": 1
-}
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 X-Powered-By: Express
-Vary: Origin, Accept-Encoding
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 Access-Control-Allow-Credentials: true
 Cache-Control: no-cache
 Pragma: no-cache
 Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://192.168.0.47/comments/18
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-Content-Length: 137
-ETag: W/"89-F6jL0MUIpsGXbmf+5IXCyKGzxAI"
-Date: Mon, 12 Dec 2022 19:46:52 GMT
+Content-Length: 53
+ETag: W/"35-FQGnh8LB9LDhM0mJxDcMZovnjXA"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
 Connection: keep-alive
 
-[
-    {
-        "id": 1,
-        "body": "How you doing !!",
-        "postId": 1
-    },
-    {
-        "id": 2,
-        "body": "Hello World",
-        "postId": 1
-    }
-]
-HTTP/1.1 200 OK
+{
+    "id": 18,
+    "body": "Hello mate",
+    "postId": 1
+}
+HTTP/1.1 201 Created
 X-Powered-By: Express
-Vary: Origin, Accept-Encoding
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 Access-Control-Allow-Credentials: true
 Cache-Control: no-cache
 Pragma: no-cache
 Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://192.168.0.47/comments/18
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-Content-Length: 137
-ETag: W/"89-F6jL0MUIpsGXbmf+5IXCyKGzxAI"
-Date: Mon, 12 Dec 2022 19:46:52 GMT
+Content-Length: 53
+ETag: W/"35-FQGnh8LB9LDhM0mJxDcMZovnjXA"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
 Connection: keep-alive
 
-[
-    {
-        "id": 1,
-        "body": "How you doing !!",
-        "postId": 1
-    },
-    {
-        "id": 2,
-        "body": "Hello World",
-        "postId": 1
-    }
-]
-HTTP/1.1 200 OK
+{
+    "id": 18,
+    "body": "Hello mate",
+    "postId": 1
+}
+HTTP/1.1 201 Created
 X-Powered-By: Express
-Vary: Origin, Accept-Encoding
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 Access-Control-Allow-Credentials: true
 Cache-Control: no-cache
 Pragma: no-cache
 Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://192.168.0.47/comments/18
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-Content-Length: 137
-ETag: W/"89-F6jL0MUIpsGXbmf+5IXCyKGzxAI"
-Date: Mon, 12 Dec 2022 19:46:52 GMT
+Content-Length: 53
+ETag: W/"35-FQGnh8LB9LDhM0mJxDcMZovnjXA"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
 Connection: keep-alive
 
-[
-    {
-        "id": 1,
-        "body": "How you doing !!",
-        "postId": 1
-    },
-    {
-        "id": 2,
-        "body": "Hello World",
-        "postId": 1
-    }
-]
-HTTP/1.1 200 OK
+{
+    "id": 18,
+    "body": "Hello mate",
+    "postId": 1
+}
+HTTP/1.1 201 Created
 X-Powered-By: Express
-Vary: Origin, Accept-Encoding
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 Access-Control-Allow-Credentials: true
 Cache-Control: no-cache
 Pragma: no-cache
 Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://192.168.0.47/comments/18
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-Content-Length: 137
-ETag: W/"89-F6jL0MUIpsGXbmf+5IXCyKGzxAI"
-Date: Mon, 12 Dec 2022 19:46:52 GMT
+Content-Length: 53
+ETag: W/"35-FQGnh8LB9LDhM0mJxDcMZovnjXA"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
 Connection: keep-alive
 
-[
-    {
-        "id": 1,
-        "body": "How you doing !!",
-        "postId": 1
-    },
-    {
-        "id": 2,
-        "body": "Hello World",
-        "postId": 1
-    }
-]
+{
+    "id": 18,
+    "body": "Hello mate",
+    "postId": 1
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://192.168.0.47/comments/18
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+Content-Length: 53
+ETag: W/"35-FQGnh8LB9LDhM0mJxDcMZovnjXA"
+Date: Fri, 16 Dec 2022 08:42:35 GMT
+Connection: keep-alive
+
+{
+    "id": 18,
+    "body": "Hello mate",
+    "postId": 1
+}

@@ -7,8 +7,7 @@ Feature: To test user related scenarios
 #    Then I should get the authentication token
 
   Scenario Outline: Post a comment
-    When I make a POST call to add a comment
-      |Comment | <Comment> |
+    When I make a POST call to add a comment "<Comment>"
     Then I get response status code as 200
     And New post with comment "<Comment>" is present in the list of all posts
 

@@ -5,4 +5,4 @@ COPY gradlew home/ApiAutomation/gradlew
 COPY gradle home/ApiAutomation/gradle
 COPY settings.gradle home/ApiAutomation/settings.gradle
 WORKDIR home/ApiAutomation
-ENTRYPOINT gradle clean test
+ENTRYPOINT gradle clean cucumberCli

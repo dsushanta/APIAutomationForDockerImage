@@ -1,11 +1,8 @@
 package com.bravo.johny.jsonserver.tests;
 
-import com.bravo.johny.jsonserver.services.CommentService;
-import com.bravo.johny.jsonserver.services.PostService;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
-public class JsonServerTests {
+
+/*public class JsonServerTests {
     protected PostService postService = new PostService();
     protected CommentService commentService = new CommentService();
 
@@ -22,4 +19,4 @@ public class JsonServerTests {
 
         Assert.assertEquals(count, commentId);
     }
-}
+}*/
