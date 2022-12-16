@@ -15,3 +15,13 @@ Feature: To test user related scenarios
       |Comment        |
       |Hi There       |
       |Hello mate     |
+
+  Scenario Outline: Post a comment
+    When I make a POST call to add a comment "<Comment>"
+    Then I get response status code as 200
+    And New post with comment "<Comment>" is present in the list of all posts
+
+    Examples:
+      |Comment                  |
+      |Joey doesn't share food  |
+      |How yo doing             |
