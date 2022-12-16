@@ -12,6 +12,7 @@ node {
     }
     stage('Clean Workspace') {
         sh ' ls ${WORKSPACE}'
+        sh 'rm -rf ${WORKSPACE}/*'
     }
     stage('Copy build') {
         def build_location = sh (script: 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name',returnStdout: true).trim()
