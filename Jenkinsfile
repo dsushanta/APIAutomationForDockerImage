@@ -39,8 +39,8 @@ pipeline {
         }
         stage('Build image') {
             steps {
-                def app = docker.build("johnybravo/rest_api_automation")
-                app.run('-v api_automation_volume:/home/ApiAutomation')
+                docker.build("johnybravo/rest_api_automation").run('-v api_automation_volume:/home/ApiAutomation')
+                //app.run('-v api_automation_volume:/home/ApiAutomation')
             }
         }
         /* stage('Create/Run container') {
