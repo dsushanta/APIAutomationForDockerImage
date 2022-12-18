@@ -33,8 +33,8 @@ node {
     }
     stage('Clean up') {
         sh "rm -rf ${WORKSPACE}/*"
-        sh 'docker rm -f $(docker ps -aq)'
-        sh 'docker rmi $(docker images -q)'
+        //sh 'docker rm -f $(docker ps -aq)'
+        //sh 'docker rmi $(docker images -q)'
         sh "docker volume rm api_automation_volume"
     }
     // stage('Remove allure results') {
