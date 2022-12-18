@@ -28,6 +28,9 @@ node {
     stage('Generate allure report') {
         allure includeProperties: false, jdk: '', report: 'allure-report', results: [[path: 'allure-results']]
     }
+    stage('Clean up') {
+        sh "rm -rf ${WORKSPACE}/*"
+        }
     // stage('Remove allure results') {
 
     //}
