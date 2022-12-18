@@ -16,6 +16,7 @@ Feature: To test user related scenarios
       |Hello mate     |
       |Welcome        |
       |Lionel Messi   |
+      |Eden Hazard    |
 
   Scenario Outline: Post a comment
     When I make a POST call to add a comment "<Comment>"

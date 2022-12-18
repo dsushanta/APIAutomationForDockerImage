@@ -2,7 +2,7 @@ node {
     def app
 
     stage('Clone repository') {
-        checkout scm
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [[$class: 'CleanBeforeCheckout']], userRemoteConfigs: [[url: 'https://github.com/dsushanta/APIAutomationForDockerImage.git']]])
     }
     stage('Create Docker volume') {
         sh "docker volume create api_automation_volume"
