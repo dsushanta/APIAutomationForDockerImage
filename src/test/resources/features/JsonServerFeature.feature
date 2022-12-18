@@ -14,6 +14,7 @@ Feature: To test user related scenarios
     Examples:
       |Comment        |
       |Hello mate     |
+      |Welcome        |
 
   Scenario Outline: Post a comment
     When I make a POST call to add a comment "<Comment>"
