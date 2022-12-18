@@ -16,7 +16,7 @@ node {
     } */
     stage('Copy build') {
         def build_location = sh (script: 'docker volume inspect --format "{{ .Mountpoint }}" api_automation_volume',returnStdout: true).trim()
-        build_location = build_location + "/ApiAutomation/build"
+        build_location = build_location + "/build"
         sh "cp -rf ${build_location} ${WORKSPACE}"
     }
     stage('Generate allure report') {
