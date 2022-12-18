@@ -39,7 +39,9 @@ pipeline {
         }
         stage('Build image') {
             steps {
-                docker.build("johnybravo/rest_api_automation").run('-v api_automation_volume:/home/ApiAutomation')
+                script {
+                    docker.build("johnybravo/rest_api_automation").run('-v api_automation_volume:/home/ApiAutomation')
+                }
                 //app.run('-v api_automation_volume:/home/ApiAutomation')
             }
         }
@@ -50,9 +52,11 @@ pipeline {
         } */
         stage('Copy build') {
             steps {
-                def build_location = sh (script: 'docker volume inspect --format "{{ .Mountpoint }}" api_automation_volume',returnStdout: true).trim()
-                build_location = build_location + "/build"
-                sh "cp -rf ${build_location} ${WORKSPACE}"
+                script {
+                    def build_location = sh (script: 'docker volume inspect --format "{{ .Mountpoint }}" api_automation_volume',returnStdout: true).trim()
+                    build_location = build_location + "/build"
+                    sh "cp -rf ${build_location} ${WORKSPACE}"
+                }
             }
         }
         stage('Generate allure report') {
