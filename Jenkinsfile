@@ -86,14 +86,24 @@ pipeline {
                 allure includeProperties: false, jdk: '', report: 'allure-report', results: [[path: 'allure-results']]
             }
         }
-        stage('Clean up') {
+        /* stage('Clean up') {
             steps {
                 script {
-                    sh "rm -rf ${WORKSPACE}/*"
+                    sh "rm -rf ${WORKSPACE} *//*"
                     sh 'docker rm -f $(docker ps -aq)'
                     sh 'docker rmi johnybravo/rest_api_automation'
                     sh "docker volume rm api_automation_volume"
                 }
+            }
+        } */
+    }
+    post {
+        always {
+            script {
+                sh "rm -rf ${WORKSPACE}/*"
+                sh 'docker rm -f $(docker ps -aq)'
+                sh 'docker rmi johnybravo/rest_api_automation'
+                sh "docker volume rm api_automation_volume"
             }
         }
     }
