@@ -7,7 +7,8 @@ node {
     stage('Build image and create container') {
         app = docker.build("johnybravo/rest_api_automation")
         //app.run('-v api_automation_volume:/home/ApiAutomation')
-        sh "docker-compose up"
+        //sh "docker-compose up"
+        sh "docker run -v api_automation_volume:/home/ApiAutomation johnybravo/rest_api_automation"
         def build_location = sh (script: 'docker volume inspect --format "{{ .Mountpoint }}" api_automation_volume',returnStdout: true).trim()
         build_location = build_location + "/build"
         sh "cp -rf ${build_location} ${WORKSPACE}"
