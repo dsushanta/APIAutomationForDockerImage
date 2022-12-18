@@ -10,7 +10,7 @@ node {
         //sh "docker-compose up"
         sh "docker run -v api_automation_volume:/home/ApiAutomation johnybravo/rest_api_automation"
         def build_location = sh (script: 'docker volume inspect --format "{{ .Mountpoint }}" api_automation_volume',returnStdout: true).trim()
-        //build_location = build_location + "/build"
+        build_location = build_location + "/allure-results"
         sh "cp -rf ${build_location} ${WORKSPACE}"
     }
     /* stage('Create container') {
