@@ -8,14 +8,14 @@ node {
         app = docker.build("johnybravo/rest_api_automation")
     }
     stage('Create container') {
-        app.run('-v random_volume_name:/home/gradle/home')
+        app.run('-v api_automation_volume:/home/gradle/home')
     }
     /* stage('Clean Workspace') {
         sh ' ls ${WORKSPACE}'
         sh 'rm -rf ${WORKSPACE} *//*'
     } */
     stage('Copy build') {
-        def build_location = sh (script: 'docker volume inspect --format "{{ .Mountpoint }}" random_volume_name',returnStdout: true).trim()
+        def build_location = sh (script: 'docker volume inspect --format "{{ .Mountpoint }}" api_automation_volume',returnStdout: true).trim()
         build_location = build_location + "/ApiAutomation/build"
         sh "cp -rf ${build_location} ${WORKSPACE}"
     }
