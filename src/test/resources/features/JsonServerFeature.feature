@@ -14,7 +14,7 @@ Feature: To test user related scenarios
     Examples:
       |Comment        |
       |Hello mate     |
-      |Welcome        |
+      |Kylian Mbappe  |
       |Lionel Messi   |
       |Eden Hazard    |
 
