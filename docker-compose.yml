@@ -1,0 +1,15 @@
+version: '1.0'
+services:
+  jenkins:
+    image: johnybravo/rest_api_automation
+    #privileged: true
+    #user: root
+    #ports:
+     # - 8001:8080
+      #- 50001:50000
+    container_name: api_automation
+    volumes:
+      - api_automation_volume:/home/ApiAutomation
+volumes:
+  api_automation_volume:
+    external: true
