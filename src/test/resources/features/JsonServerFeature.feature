@@ -27,3 +27,4 @@ Feature: To test user related scenarios
       |Comment                  |
       |Kai Havertz              |
       |Marcus Rashford          |
+      |Alvaro Morata            |
