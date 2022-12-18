@@ -44,13 +44,6 @@ pipeline {
                 }
                 //app.run('-v api_automation_volume:/home/ApiAutomation')
             }
-        }
-        /* stage('Create/Run container') {
-            steps {
-                app.run('-v api_automation_volume:/home/ApiAutomation')
-            }
-        } */
-        stage('Copy build') {
             steps {
                 script {
                     def build_location = sh (script: 'docker volume inspect --format "{{ .Mountpoint }}" api_automation_volume',returnStdout: true).trim()
@@ -59,6 +52,20 @@ pipeline {
                 }
             }
         }
+        /* stage('Create/Run container') {
+            steps {
+                app.run('-v api_automation_volume:/home/ApiAutomation')
+            }
+        } */
+        /* stage('Copy build') {
+            steps {
+                script {
+                    def build_location = sh (script: 'docker volume inspect --format "{{ .Mountpoint }}" api_automation_volume',returnStdout: true).trim()
+                    build_location = build_location + "/build"
+                    sh "cp -rf ${build_location} ${WORKSPACE}"
+                }
+            }
+        } */
         stage('Generate allure report') {
             steps {
                 allure includeProperties: false, jdk: '', report: 'allure-report', results: [[path: 'allure-results']]
