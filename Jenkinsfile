@@ -4,6 +4,9 @@ node {
     stage('Clone repository') {
         checkout scm
     }
+    stage('Create Docker volume') {
+        sh "docker volume create api_automation_volume"
+    }
     stage('Build image and create container') {
         app = docker.build("johnybravo/rest_api_automation")
         //app.run('-v api_automation_volume:/home/ApiAutomation')
@@ -32,6 +35,7 @@ node {
         sh "rm -rf ${WORKSPACE}/*"
         sh 'docker rm -f $(docker ps -aq)'
         sh 'docker rmi $(docker images -q)'
+        sh "docker volume rm api_automation_volume"
     }
     // stage('Remove allure results') {
 
