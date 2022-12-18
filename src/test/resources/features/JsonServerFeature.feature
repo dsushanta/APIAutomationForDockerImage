@@ -13,7 +13,7 @@ Feature: To test user related scenarios
 
     Examples:
       |Comment        |
-      |Hello mate     |
+      |Luka Modric    |
       |Kylian Mbappe  |
       |Lionel Messi   |
       |Eden Hazard    |
