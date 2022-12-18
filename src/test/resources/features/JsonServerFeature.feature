@@ -16,7 +16,7 @@ Feature: To test user related scenarios
       |Luka Modric    |
       |Kylian Mbappe  |
       |Lionel Messi   |
-      |Eden Hazard    |
+      |Hakim Ziyech   |
 
   Scenario Outline: Post a comment
     When I make a POST call to add a comment "<Comment>"
