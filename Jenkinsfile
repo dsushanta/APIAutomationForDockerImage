@@ -8,7 +8,7 @@ node {
         app = docker.build("johnybravo/rest_api_automation")
     }
     stage('Create container') {
-        app.run('-v api_automation_volume:/home/gradle/home')
+        app.run('-v api_automation_volume:/home/ApiAutomation')
     }
     /* stage('Clean Workspace') {
         sh ' ls ${WORKSPACE}'
