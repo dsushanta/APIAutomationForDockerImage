@@ -52,16 +52,6 @@ pipeline {
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [[$class: 'CleanBeforeCheckout', deleteUntrackedNestedRepositories: true]], userRemoteConfigs: [[url: 'https://github.com/dsushanta/APIAutomationForDockerImage.git']]])
             }
         }
-        stage('Clean up before running') {
-            steps {
-                script {
-                    sh "rm -rf ${WORKSPACE}/*"
-                    sh 'docker rm -f $(docker ps -aq)'
-                    sh 'docker rmi johnybravo/rest_api_automation'
-                    sh "docker volume rm api_automation_volume"
-                }
-            }
-        }
         stage('Create Docker volume') {
             steps {
                 script {
