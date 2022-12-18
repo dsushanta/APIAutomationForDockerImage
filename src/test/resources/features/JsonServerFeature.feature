@@ -26,4 +26,4 @@ Feature: To test user related scenarios
     Examples:
       |Comment                  |
       |Kai Havertz              |
-      |How yo doing             |
+      |Marcus Rashford          |
