@@ -25,5 +25,5 @@ Feature: To test user related scenarios
 
     Examples:
       |Comment                  |
-      |Joey doesn't share food  |
+      |Kai Havertz              |
       |How yo doing             |
