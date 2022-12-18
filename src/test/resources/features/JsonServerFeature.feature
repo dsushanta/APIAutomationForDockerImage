@@ -13,7 +13,6 @@ Feature: To test user related scenarios
 
     Examples:
       |Comment        |
-      |Hi There       |
       |Hello mate     |
 
   Scenario Outline: Post a comment
