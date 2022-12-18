@@ -30,7 +30,9 @@ node {
     }
     stage('Clean up') {
         sh "rm -rf ${WORKSPACE}/*"
-        }
+        sh 'docker rm -f $(docker ps -aq)'
+        sh 'docker rmi $(docker images -q)'
+    }
     // stage('Remove allure results') {
 
     //}
