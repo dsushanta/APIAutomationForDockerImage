@@ -27,7 +27,7 @@
     //}
 } */
 
-def app
+//def app
 pipeline {
     agent any
 
@@ -39,14 +39,15 @@ pipeline {
         }
         stage('Build image') {
             steps {
-                app = docker.build("johnybravo/rest_api_automation")
-            }
-        }
-        stage('Create/Run container') {
-            steps {
+                def app = docker.build("johnybravo/rest_api_automation")
                 app.run('-v api_automation_volume:/home/ApiAutomation')
             }
         }
+        /* stage('Create/Run container') {
+            steps {
+                app.run('-v api_automation_volume:/home/ApiAutomation')
+            }
+        } */
         stage('Copy build') {
             steps {
                 def build_location = sh (script: 'docker volume inspect --format "{{ .Mountpoint }}" api_automation_volume',returnStdout: true).trim()
