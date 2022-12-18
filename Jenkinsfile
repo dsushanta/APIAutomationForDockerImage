@@ -20,7 +20,7 @@ node {
         sh "cp -rf ${build_location} ${WORKSPACE}"
     }
     stage('Generate allure report') {
-        allure includeProperties: false, jdk: '', report: 'build/allure-report', results: [[path: 'build/allure-results']]
+        allure includeProperties: false, jdk: '', report: 'allure-report', results: [[path: 'allure-results']]
     }
     /* stage('Remove allure results') {
 
